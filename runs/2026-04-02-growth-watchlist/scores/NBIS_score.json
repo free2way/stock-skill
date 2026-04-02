@@ -1,0 +1,57 @@
+{
+  "ticker": "NBIS",
+  "total_score": 22,
+  "max_score": 40,
+  "label": "mixed",
+  "score_summary": "Overall 22/40 (mixed).",
+  "breakdown": [
+    {
+      "name": "revenue_growth",
+      "score": 5,
+      "max_score": 5,
+      "note": "Revenue growth 547.0%"
+    },
+    {
+      "name": "gross_margin",
+      "score": 5,
+      "max_score": 5,
+      "note": "Gross margin 67.0%"
+    },
+    {
+      "name": "fcf_margin",
+      "score": 0,
+      "max_score": 5,
+      "note": "FCF margin -35.0%"
+    },
+    {
+      "name": "net_cash_to_revenue",
+      "score": 5,
+      "max_score": 5,
+      "note": "Net cash / revenue 6.98x"
+    },
+    {
+      "name": "share_dilution",
+      "score": 2,
+      "max_score": 5,
+      "note": "Share dilution 4.0%"
+    },
+    {
+      "name": "top_customer_share",
+      "score": 3,
+      "max_score": 5,
+      "note": "Top customer share 28.0%"
+    },
+    {
+      "name": "capex_to_revenue",
+      "score": 0,
+      "max_score": 5,
+      "note": "Capex / revenue 3.96x"
+    },
+    {
+      "name": "rule_of_40",
+      "score": 2,
+      "max_score": 5,
+      "note": "Rule of 40 32.0"
+    }
+  ]
+}

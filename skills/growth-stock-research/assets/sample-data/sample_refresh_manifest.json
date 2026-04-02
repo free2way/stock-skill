@@ -1,0 +1,12 @@
+[
+  {
+    "report": "sample_nbis_report.json",
+    "input": "sample_nbis_update.txt",
+    "output": "sample_nbis_report.json"
+  },
+  {
+    "report": "sample_iren_report.json",
+    "input": "sample_iren_update.txt",
+    "output": "sample_iren_report.json"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "ticker": "AAOI",
+  "analysis_date": "2026-04-02",
+  "revenue_growth_yoy": 83.0,
+  "gross_margin": 30.0,
+  "fcf_margin": -4.0,
+  "top_customer_share": 10.0,
+  "share_dilution_yoy": 12.0,
+  "rule_of_40": 79.0,
+  "capex_to_revenue": 0.3445249067368883,
+  "net_cash_to_revenue": 0.4739960500329164,
+  "missing": [],
+  "sources": {
+    "revenue_growth_yoy": "y as of 2026-04-02. revenue was $455.7 million for full year 2025. revenue grew 83% year over year. gross margin was 30%. free cash flow margin was -4%. net cash",
+    "gross_margin": "7 million for full year 2025. revenue grew 83% year over year. gross margin was 30%. free cash flow margin was -4%. net cash was $216 million at year end 2025. ca",
+    "fcf_margin": "evenue grew 83% year over year. gross margin was 30%. free cash flow margin was -4%. net cash was $216 million at year end 2025. capital expenditures were $157 mi",
+    "top_customer_share": "year end 2025. capital expenditures were $157 million. top customer represented 10% of revenue. share dilution was 12.0% year over year. rule of 40 was 79.",
+    "share_dilution_yoy": "were $157 million. top customer represented 10% of revenue. share dilution was 12.0% year over year. rule of 40 was 79.",
+    "rule_of_40": "esented 10% of revenue. share dilution was 12.0% year over year. rule of 40 was 79.",
+    "revenue_amount": "toelectronics latest normalized workflow summary as of 2026-04-02. revenue was $455.7 million for full year 2025. revenue grew 83% year over year. gross margin was 30%. free",
+    "capex_amount": "was -4%. net cash was $216 million at year end 2025. capital expenditures were $157 million. top customer represented 10% of revenue. share dilution was 12.0% year over ye",
+    "net_cash_amount": "r over year. gross margin was 30%. free cash flow margin was -4%. net cash was $216 million at year end 2025. capital expenditures were $157 million. top customer represen"
+  }
+}

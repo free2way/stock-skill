@@ -1,0 +1,57 @@
+{
+  "ticker": "CRWV",
+  "total_score": 25,
+  "max_score": 40,
+  "label": "mixed",
+  "score_summary": "Overall 25/40 (mixed).",
+  "breakdown": [
+    {
+      "name": "revenue_growth",
+      "score": 5,
+      "max_score": 5,
+      "note": "Revenue growth 168.0%"
+    },
+    {
+      "name": "gross_margin",
+      "score": 5,
+      "max_score": 5,
+      "note": "Gross margin 72.0%"
+    },
+    {
+      "name": "fcf_margin",
+      "score": 3,
+      "max_score": 5,
+      "note": "FCF margin 8.0%"
+    },
+    {
+      "name": "net_cash_to_revenue",
+      "score": 1,
+      "max_score": 5,
+      "note": "Net cash / revenue 0.51x"
+    },
+    {
+      "name": "share_dilution",
+      "score": 0,
+      "max_score": 5,
+      "note": "Share dilution 14.0%"
+    },
+    {
+      "name": "top_customer_share",
+      "score": 2,
+      "max_score": 5,
+      "note": "Top customer share 38.0%"
+    },
+    {
+      "name": "capex_to_revenue",
+      "score": 4,
+      "max_score": 5,
+      "note": "Capex / revenue 0.35x"
+    },
+    {
+      "name": "rule_of_40",
+      "score": 5,
+      "max_score": 5,
+      "note": "Rule of 40 176.0"
+    }
+  ]
+}

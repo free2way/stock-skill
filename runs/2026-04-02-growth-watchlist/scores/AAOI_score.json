@@ -1,0 +1,57 @@
+{
+  "ticker": "AAOI",
+  "total_score": 20,
+  "max_score": 40,
+  "label": "mixed",
+  "score_summary": "Overall 20/40 (mixed).",
+  "breakdown": [
+    {
+      "name": "revenue_growth",
+      "score": 5,
+      "max_score": 5,
+      "note": "Revenue growth 83.0%"
+    },
+    {
+      "name": "gross_margin",
+      "score": 0,
+      "max_score": 5,
+      "note": "Gross margin 30.0%"
+    },
+    {
+      "name": "fcf_margin",
+      "score": 1,
+      "max_score": 5,
+      "note": "FCF margin -4.0%"
+    },
+    {
+      "name": "net_cash_to_revenue",
+      "score": 1,
+      "max_score": 5,
+      "note": "Net cash / revenue 0.47x"
+    },
+    {
+      "name": "share_dilution",
+      "score": 0,
+      "max_score": 5,
+      "note": "Share dilution 12.0%"
+    },
+    {
+      "name": "top_customer_share",
+      "score": 4,
+      "max_score": 5,
+      "note": "Top customer share 10.0%"
+    },
+    {
+      "name": "capex_to_revenue",
+      "score": 4,
+      "max_score": 5,
+      "note": "Capex / revenue 0.34x"
+    },
+    {
+      "name": "rule_of_40",
+      "score": 5,
+      "max_score": 5,
+      "note": "Rule of 40 79.0"
+    }
+  ]
+}

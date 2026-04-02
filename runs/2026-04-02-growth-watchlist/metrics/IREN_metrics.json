@@ -1,0 +1,24 @@
+{
+  "ticker": "IREN",
+  "analysis_date": "2026-04-02",
+  "revenue_growth_yoy": 62.0,
+  "gross_margin": 61.0,
+  "fcf_margin": -8.0,
+  "top_customer_share": 35.0,
+  "share_dilution_yoy": 6.0,
+  "rule_of_40": 54.0,
+  "capex_to_revenue": 0.8121277747698972,
+  "net_cash_to_revenue": 15.159718462371414,
+  "missing": [],
+  "sources": {
+    "revenue_growth_yoy": "4-02. revenue was $184.7 million for the quarter ended 2025-12-31. revenue grew 62% year over year. gross margin was 61%. free cash flow margin was -8%. net cash",
+    "gross_margin": "the quarter ended 2025-12-31. revenue grew 62% year over year. gross margin was 61%. free cash flow margin was -8%. net cash was $2800 million as of 2026-01-31. c",
+    "fcf_margin": "evenue grew 62% year over year. gross margin was 61%. free cash flow margin was -8%. net cash was $2800 million as of 2026-01-31. capital expenditures were $150 m",
+    "top_customer_share": "of 2026-01-31. capital expenditures were $150 million. top customer represented 35% of revenue. share dilution was 6.0% year over year. rule of 40 was 54.",
+    "share_dilution_yoy": "were $150 million. top customer represented 35% of revenue. share dilution was 6.0% year over year. rule of 40 was 54.",
+    "rule_of_40": "resented 35% of revenue. share dilution was 6.0% year over year. rule of 40 was 54.",
+    "revenue_amount": "iren latest normalized workflow summary as of 2026-04-02. revenue was $184.7 million for the quarter ended 2025-12-31. revenue grew 62% year over year. gross margin",
+    "capex_amount": "as -8%. net cash was $2800 million as of 2026-01-31. capital expenditures were $150 million. top customer represented 35% of revenue. share dilution was 6.0% year over yea",
+    "net_cash_amount": "r over year. gross margin was 61%. free cash flow margin was -8%. net cash was $2800 million as of 2026-01-31. capital expenditures were $150 million. top customer represen"
+  }
+}

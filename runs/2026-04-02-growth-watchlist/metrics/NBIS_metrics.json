@@ -1,0 +1,24 @@
+{
+  "ticker": "NBIS",
+  "analysis_date": "2026-04-02",
+  "revenue_growth_yoy": 547.0,
+  "gross_margin": 67.0,
+  "fcf_margin": -35.0,
+  "top_customer_share": 28.0,
+  "share_dilution_yoy": 4.0,
+  "rule_of_40": 32.0,
+  "capex_to_revenue": 3.9637599093997737,
+  "net_cash_to_revenue": 6.983767459418649,
+  "missing": [],
+  "sources": {
+    "revenue_growth_yoy": "y as of 2026-04-02. revenue was $529.8 million for full year 2025. revenue grew 547% year over year in the fourth quarter of 2025. gross margin was 67%. free cash",
+    "gross_margin": "evenue grew 547% year over year in the fourth quarter of 2025. gross margin was 67%. free cash flow margin was -35%. net cash was $3700 million at year end 2025.",
+    "fcf_margin": "in the fourth quarter of 2025. gross margin was 67%. free cash flow margin was -35%. net cash was $3700 million at year end 2025. capital expenditures were $2100",
+    "top_customer_share": "ures were $2100 million in the fourth quarter of 2025. top customer represented 28% of revenue. share dilution was 4.0% year over year. rule of 40 was 32.",
+    "share_dilution_yoy": "th quarter of 2025. top customer represented 28% of revenue. share dilution was 4.0% year over year. rule of 40 was 32.",
+    "rule_of_40": "resented 28% of revenue. share dilution was 4.0% year over year. rule of 40 was 32.",
+    "revenue_amount": "nebius group latest normalized workflow summary as of 2026-04-02. revenue was $529.8 million for full year 2025. revenue grew 547% year over year in the fourth quarter of 2",
+    "capex_amount": "s -35%. net cash was $3700 million at year end 2025. capital expenditures were $2100 million in the fourth quarter of 2025. top customer represented 28% of revenue. share d",
+    "net_cash_amount": "er of 2025. gross margin was 67%. free cash flow margin was -35%. net cash was $3700 million at year end 2025. capital expenditures were $2100 million in the fourth quarter"
+  }
+}

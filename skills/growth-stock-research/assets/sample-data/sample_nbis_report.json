@@ -1,0 +1,29 @@
+{
+  "ticker": "NBIS",
+  "analysis_date": "2026-04-02",
+  "business_quality": "AI infrastructure platform with strategic partners.",
+  "growth_durability": "High if cluster demand and customer ramps continue.",
+  "key_risks": "Capex intensity, customer concentration, valuation compression.",
+  "valuation_context": "Premium multiple with execution already partly priced in.",
+  "metrics": {
+    "ticker": "NBIS",
+    "analysis_date": "2026-04-02",
+    "revenue_growth_yoy": 58.0,
+    "gross_margin": 64.0,
+    "fcf_margin": -6.0,
+    "top_customer_share": 28.0,
+    "share_dilution_yoy": 3.5,
+    "capex_to_revenue": 0.849,
+    "net_cash_to_revenue": 0.906,
+    "rule_of_40": 52.0,
+    "missing": [],
+    "sources": {}
+  },
+  "score": {
+    "ticker": "NBIS",
+    "total_score": 23,
+    "max_score": 40,
+    "label": "mixed",
+    "score_summary": "Overall 23/40 (mixed)."
+  }
+}

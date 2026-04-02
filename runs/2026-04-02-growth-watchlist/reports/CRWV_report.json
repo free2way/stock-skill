@@ -1,0 +1,141 @@
+{
+  "ticker": "CRWV",
+  "analysis_date": "2026-04-02",
+  "business_quality": "Pure-play AI cloud platform with enormous backlog and rapid infrastructure scaling.",
+  "growth_durability": "High if backlog converts cleanly and financing remains available at tolerable cost.",
+  "key_risks": "Leverage, interest burden, customer concentration, and any pause in AI infrastructure demand.",
+  "valuation_context": "One of the strongest operating stories in the group, but also one of the most financing-sensitive.",
+  "better_business": "TBD",
+  "better_stock": "TBD",
+  "higher_upside": "TBD",
+  "lower_risk": "TBD",
+  "score_summary": "Overall 25/40 (mixed).",
+  "backtest_summary": "Backtest 2025-04-01 to 2026-04-01: total return -54.58%, max drawdown -56.49%.",
+  "notes": "Several scorecard fields are normalized from the Q4 2025 release and related coverage rather than pulled from a single explicit company scorecard.",
+  "metrics": {
+    "ticker": "CRWV",
+    "analysis_date": "2026-04-02",
+    "revenue_growth_yoy": 168.0,
+    "gross_margin": 72.0,
+    "fcf_margin": 8.0,
+    "top_customer_share": 38.0,
+    "share_dilution_yoy": 14.0,
+    "rule_of_40": 176.0,
+    "capex_to_revenue": 0.35080880919898655,
+    "net_cash_to_revenue": 0.5067238355096473,
+    "missing": [],
+    "sources": {
+      "revenue_growth_yoy": "ry as of 2026-04-02. revenue was $5131 million for full year 2025. revenue grew 168% year over year. gross margin was 72%. free cash flow margin was 8%. net cash w",
+      "gross_margin": "million for full year 2025. revenue grew 168% year over year. gross margin was 72%. free cash flow margin was 8%. net cash was $2600 million. capital expenditure",
+      "fcf_margin": "venue grew 168% year over year. gross margin was 72%. free cash flow margin was 8%. net cash was $2600 million. capital expenditures were $1800 million. top cust",
+      "top_customer_share": "2600 million. capital expenditures were $1800 million. top customer represented 38% of revenue. share dilution was 14.0% year over year. rule of 40 was 176.",
+      "share_dilution_yoy": "were $1800 million. top customer represented 38% of revenue. share dilution was 14.0% year over year. rule of 40 was 176.",
+      "rule_of_40": "esented 38% of revenue. share dilution was 14.0% year over year. rule of 40 was 176.",
+      "revenue_amount": "coreweave latest normalized workflow summary as of 2026-04-02. revenue was $5131 million for full year 2025. revenue grew 168% year over year. gross margin was 72%. fre",
+      "capex_amount": "cash flow margin was 8%. net cash was $2600 million. capital expenditures were $1800 million. top customer represented 38% of revenue. share dilution was 14.0% year over ye",
+      "net_cash_amount": "ar over year. gross margin was 72%. free cash flow margin was 8%. net cash was $2600 million. capital expenditures were $1800 million. top customer represented 38% of reven"
+    }
+  },
+  "score": {
+    "ticker": "CRWV",
+    "total_score": 25,
+    "max_score": 40,
+    "label": "mixed",
+    "score_summary": "Overall 25/40 (mixed).",
+    "breakdown": [
+      {
+        "name": "revenue_growth",
+        "score": 5,
+        "max_score": 5,
+        "note": "Revenue growth 168.0%"
+      },
+      {
+        "name": "gross_margin",
+        "score": 5,
+        "max_score": 5,
+        "note": "Gross margin 72.0%"
+      },
+      {
+        "name": "fcf_margin",
+        "score": 3,
+        "max_score": 5,
+        "note": "FCF margin 8.0%"
+      },
+      {
+        "name": "net_cash_to_revenue",
+        "score": 1,
+        "max_score": 5,
+        "note": "Net cash / revenue 0.51x"
+      },
+      {
+        "name": "share_dilution",
+        "score": 0,
+        "max_score": 5,
+        "note": "Share dilution 14.0%"
+      },
+      {
+        "name": "top_customer_share",
+        "score": 2,
+        "max_score": 5,
+        "note": "Top customer share 38.0%"
+      },
+      {
+        "name": "capex_to_revenue",
+        "score": 4,
+        "max_score": 5,
+        "note": "Capex / revenue 0.35x"
+      },
+      {
+        "name": "rule_of_40",
+        "score": 5,
+        "max_score": 5,
+        "note": "Rule of 40 176.0"
+      }
+    ]
+  },
+  "backtest": {
+    "stats": {
+      "start_date": "2025-04-01",
+      "end_date": "2026-04-01",
+      "total_return": -0.5457811050094101,
+      "cagr": -0.5472069844651977,
+      "max_drawdown": -0.564923817808372,
+      "volatility": 0.3674842634031482,
+      "sharpe": -1.9577670947819499,
+      "sortino": -2.176709401130978,
+      "exposure": 0.14741035856573706,
+      "trade_count": 3,
+      "win_rate": 0.0
+    },
+    "trades": [
+      {
+        "entry_date": "2025-10-01",
+        "entry_price": 137.0500030517578,
+        "exit_date": "2025-11-14",
+        "exit_price": 77.36000061035156,
+        "return_pct": -0.4355344845841699
+      },
+      {
+        "entry_date": "2026-02-19",
+        "entry_price": 97.13999938964844,
+        "exit_date": "2026-02-20",
+        "exit_price": 89.25,
+        "return_pct": -0.08122297137351253
+      },
+      {
+        "entry_date": "2026-02-23",
+        "entry_price": 90.83999633789062,
+        "exit_date": "2026-02-27",
+        "exit_price": 79.55999755859375,
+        "return_pct": -0.12417436409111604
+      }
+    ]
+  },
+  "notes_input": {
+    "business_quality": "Pure-play AI cloud platform with enormous backlog and rapid infrastructure scaling.",
+    "growth_durability": "High if backlog converts cleanly and financing remains available at tolerable cost.",
+    "key_risks": "Leverage, interest burden, customer concentration, and any pause in AI infrastructure demand.",
+    "valuation_context": "One of the strongest operating stories in the group, but also one of the most financing-sensitive.",
+    "notes": "Several scorecard fields are normalized from the Q4 2025 release and related coverage rather than pulled from a single explicit company scorecard."
+  }
+}

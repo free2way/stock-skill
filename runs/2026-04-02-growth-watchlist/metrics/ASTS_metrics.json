@@ -1,0 +1,24 @@
+{
+  "ticker": "ASTS",
+  "analysis_date": "2026-04-02",
+  "revenue_growth_yoy": 2615.0,
+  "gross_margin": 60.0,
+  "fcf_margin": -450.0,
+  "top_customer_share": 20.0,
+  "share_dilution_yoy": 32.0,
+  "rule_of_40": 2165.0,
+  "capex_to_revenue": 5.740479548660085,
+  "net_cash_to_revenue": 55.00705218617772,
+  "missing": [],
+  "sources": {
+    "revenue_growth_yoy": "ry as of 2026-04-02. revenue was $70.9 million for full year 2025. revenue grew 2615% year over year in the fourth quarter of 2025. gross margin was 60%. free cash",
+    "gross_margin": "venue grew 2615% year over year in the fourth quarter of 2025. gross margin was 60%. free cash flow margin was -450%. net cash was $3900 million. capital expendit",
+    "fcf_margin": "in the fourth quarter of 2025. gross margin was 60%. free cash flow margin was -450%. net cash was $3900 million. capital expenditures were $407 million. top custo",
+    "top_customer_share": "$3900 million. capital expenditures were $407 million. top customer represented 20% of revenue. share dilution was 32.0% year over year. rule of 40 was 2165.",
+    "share_dilution_yoy": "were $407 million. top customer represented 20% of revenue. share dilution was 32.0% year over year. rule of 40 was 2165.",
+    "rule_of_40": "esented 20% of revenue. share dilution was 32.0% year over year. rule of 40 was 2165.",
+    "revenue_amount": "t spacemobile latest normalized workflow summary as of 2026-04-02. revenue was $70.9 million for full year 2025. revenue grew 2615% year over year in the fourth quarter of",
+    "capex_amount": "h flow margin was -450%. net cash was $3900 million. capital expenditures were $407 million. top customer represented 20% of revenue. share dilution was 32.0% year over ye",
+    "net_cash_amount": "r of 2025. gross margin was 60%. free cash flow margin was -450%. net cash was $3900 million. capital expenditures were $407 million. top customer represented 20% of revenu"
+  }
+}

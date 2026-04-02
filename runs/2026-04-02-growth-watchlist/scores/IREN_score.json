@@ -1,0 +1,57 @@
+{
+  "ticker": "IREN",
+  "total_score": 23,
+  "max_score": 40,
+  "label": "mixed",
+  "score_summary": "Overall 23/40 (mixed).",
+  "breakdown": [
+    {
+      "name": "revenue_growth",
+      "score": 5,
+      "max_score": 5,
+      "note": "Revenue growth 62.0%"
+    },
+    {
+      "name": "gross_margin",
+      "score": 4,
+      "max_score": 5,
+      "note": "Gross margin 61.0%"
+    },
+    {
+      "name": "fcf_margin",
+      "score": 0,
+      "max_score": 5,
+      "note": "FCF margin -8.0%"
+    },
+    {
+      "name": "net_cash_to_revenue",
+      "score": 5,
+      "max_score": 5,
+      "note": "Net cash / revenue 15.16x"
+    },
+    {
+      "name": "share_dilution",
+      "score": 1,
+      "max_score": 5,
+      "note": "Share dilution 6.0%"
+    },
+    {
+      "name": "top_customer_share",
+      "score": 2,
+      "max_score": 5,
+      "note": "Top customer share 35.0%"
+    },
+    {
+      "name": "capex_to_revenue",
+      "score": 2,
+      "max_score": 5,
+      "note": "Capex / revenue 0.81x"
+    },
+    {
+      "name": "rule_of_40",
+      "score": 4,
+      "max_score": 5,
+      "note": "Rule of 40 54.0"
+    }
+  ]
+}

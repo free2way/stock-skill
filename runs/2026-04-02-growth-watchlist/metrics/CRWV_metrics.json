@@ -1,0 +1,24 @@
+{
+  "ticker": "CRWV",
+  "analysis_date": "2026-04-02",
+  "revenue_growth_yoy": 168.0,
+  "gross_margin": 72.0,
+  "fcf_margin": 8.0,
+  "top_customer_share": 38.0,
+  "share_dilution_yoy": 14.0,
+  "rule_of_40": 176.0,
+  "capex_to_revenue": 0.35080880919898655,
+  "net_cash_to_revenue": 0.5067238355096473,
+  "missing": [],
+  "sources": {
+    "revenue_growth_yoy": "ry as of 2026-04-02. revenue was $5131 million for full year 2025. revenue grew 168% year over year. gross margin was 72%. free cash flow margin was 8%. net cash w",
+    "gross_margin": "million for full year 2025. revenue grew 168% year over year. gross margin was 72%. free cash flow margin was 8%. net cash was $2600 million. capital expenditure",
+    "fcf_margin": "venue grew 168% year over year. gross margin was 72%. free cash flow margin was 8%. net cash was $2600 million. capital expenditures were $1800 million. top cust",
+    "top_customer_share": "2600 million. capital expenditures were $1800 million. top customer represented 38% of revenue. share dilution was 14.0% year over year. rule of 40 was 176.",
+    "share_dilution_yoy": "were $1800 million. top customer represented 38% of revenue. share dilution was 14.0% year over year. rule of 40 was 176.",
+    "rule_of_40": "esented 38% of revenue. share dilution was 14.0% year over year. rule of 40 was 176.",
+    "revenue_amount": "coreweave latest normalized workflow summary as of 2026-04-02. revenue was $5131 million for full year 2025. revenue grew 168% year over year. gross margin was 72%. fre",
+    "capex_amount": "cash flow margin was 8%. net cash was $2600 million. capital expenditures were $1800 million. top customer represented 38% of revenue. share dilution was 14.0% year over ye",
+    "net_cash_amount": "ar over year. gross margin was 72%. free cash flow margin was 8%. net cash was $2600 million. capital expenditures were $1800 million. top customer represented 38% of reven"
+  }
+}
