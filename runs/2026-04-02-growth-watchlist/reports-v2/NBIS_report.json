@@ -1,0 +1,176 @@
+{
+  "ticker": "NBIS",
+  "analysis_date": "2026-04-02",
+  "business_quality": "AI infrastructure platform with strong ecosystem validation from NVIDIA, Meta, and Microsoft-linked demand.",
+  "growth_durability": "High if capacity ramps, customer concentration stays manageable, and hyperscale demand persists.",
+  "key_risks": "Extreme capital intensity, customer concentration, and a valuation that already discounts strong execution.",
+  "valuation_context": "High-quality AI infrastructure story, but the stock still needs to prove that scale can outgrow financing drag.",
+  "better_business": "TBD",
+  "better_stock": "TBD",
+  "higher_upside": "TBD",
+  "lower_risk": "TBD",
+  "score_summary": "Overall 22/40 (mixed).",
+  "backtest_summary": "Backtest 2025-04-01 to 2026-04-01: total return -8.34%, max drawdown -45.47%.",
+  "notes": "Normalized score inputs include workflow estimates for customer concentration and dilution where disclosure detail was limited.",
+  "metrics": {
+    "ticker": "NBIS",
+    "analysis_date": "2026-04-02",
+    "revenue_growth_yoy": 547.0,
+    "gross_margin": 67.0,
+    "fcf_margin": -35.0,
+    "top_customer_share": 28.0,
+    "share_dilution_yoy": 4.0,
+    "rule_of_40": 32.0,
+    "capex_to_revenue": 3.9637599093997737,
+    "net_cash_to_revenue": 6.983767459418649,
+    "missing": [],
+    "sources": {
+      "revenue_growth_yoy": "y as of 2026-04-02. revenue was $529.8 million for full year 2025. revenue grew 547% year over year in the fourth quarter of 2025. gross margin was 67%. free cash",
+      "gross_margin": "evenue grew 547% year over year in the fourth quarter of 2025. gross margin was 67%. free cash flow margin was -35%. net cash was $3700 million at year end 2025.",
+      "fcf_margin": "in the fourth quarter of 2025. gross margin was 67%. free cash flow margin was -35%. net cash was $3700 million at year end 2025. capital expenditures were $2100",
+      "top_customer_share": "ures were $2100 million in the fourth quarter of 2025. top customer represented 28% of revenue. share dilution was 4.0% year over year. rule of 40 was 32.",
+      "share_dilution_yoy": "th quarter of 2025. top customer represented 28% of revenue. share dilution was 4.0% year over year. rule of 40 was 32.",
+      "rule_of_40": "resented 28% of revenue. share dilution was 4.0% year over year. rule of 40 was 32.",
+      "revenue_amount": "nebius group latest normalized workflow summary as of 2026-04-02. revenue was $529.8 million for full year 2025. revenue grew 547% year over year in the fourth quarter of 2",
+      "capex_amount": "s -35%. net cash was $3700 million at year end 2025. capital expenditures were $2100 million in the fourth quarter of 2025. top customer represented 28% of revenue. share d",
+      "net_cash_amount": "er of 2025. gross margin was 67%. free cash flow margin was -35%. net cash was $3700 million at year end 2025. capital expenditures were $2100 million in the fourth quarter"
+    }
+  },
+  "score": {
+    "ticker": "NBIS",
+    "total_score": 22,
+    "max_score": 40,
+    "label": "mixed",
+    "score_summary": "Overall 22/40 (mixed).",
+    "breakdown": [
+      {
+        "name": "revenue_growth",
+        "score": 5,
+        "max_score": 5,
+        "note": "Revenue growth 547.0%"
+      },
+      {
+        "name": "gross_margin",
+        "score": 5,
+        "max_score": 5,
+        "note": "Gross margin 67.0%"
+      },
+      {
+        "name": "fcf_margin",
+        "score": 0,
+        "max_score": 5,
+        "note": "FCF margin -35.0%"
+      },
+      {
+        "name": "net_cash_to_revenue",
+        "score": 5,
+        "max_score": 5,
+        "note": "Net cash / revenue 6.98x"
+      },
+      {
+        "name": "share_dilution",
+        "score": 2,
+        "max_score": 5,
+        "note": "Share dilution 4.0%"
+      },
+      {
+        "name": "top_customer_share",
+        "score": 3,
+        "max_score": 5,
+        "note": "Top customer share 28.0%"
+      },
+      {
+        "name": "capex_to_revenue",
+        "score": 0,
+        "max_score": 5,
+        "note": "Capex / revenue 3.96x"
+      },
+      {
+        "name": "rule_of_40",
+        "score": 2,
+        "max_score": 5,
+        "note": "Rule of 40 32.0"
+      }
+    ]
+  },
+  "backtest": {
+    "stats": {
+      "start_date": "2025-04-01",
+      "end_date": "2026-04-01",
+      "total_return": -0.08338378460993756,
+      "cagr": -0.08370168360992525,
+      "max_drawdown": -0.4546729729416148,
+      "volatility": 0.6699860807580237,
+      "sharpe": 0.1989542024505689,
+      "sortino": 0.3028097584963452,
+      "exposure": 0.4820717131474104,
+      "trade_count": 1,
+      "win_rate": 0.0
+    },
+    "trades": [
+      {
+        "entry_date": "2025-10-01",
+        "entry_price": 115.61000061035156,
+        "exit_date": "2026-03-26",
+        "exit_price": 105.97000122070312,
+        "return_pct": -0.08338378460993867
+      }
+    ]
+  },
+  "notes_input": {
+    "business_quality": "AI infrastructure platform with strong ecosystem validation from NVIDIA, Meta, and Microsoft-linked demand.",
+    "growth_durability": "High if capacity ramps, customer concentration stays manageable, and hyperscale demand persists.",
+    "key_risks": "Extreme capital intensity, customer concentration, and a valuation that already discounts strong execution.",
+    "valuation_context": "High-quality AI infrastructure story, but the stock still needs to prove that scale can outgrow financing drag.",
+    "notes": "Normalized score inputs include workflow estimates for customer concentration and dilution where disclosure detail was limited."
+  },
+  "relative_strength": {
+    "relative_strength_version": "v1-lookback-relative",
+    "latest_date": "2026-04-01",
+    "aligned_row_count": 252,
+    "snapshots": {
+      "20": {
+        "start_date": "2026-03-04",
+        "end_date": "2026-04-01",
+        "stock_return": 0.042646739834366176,
+        "benchmark_return": -0.043291039609342996,
+        "relative_return": 0.08593777944370917,
+        "performance_ratio": 1.0898264602942758
+      },
+      "60": {
+        "start_date": "2026-01-05",
+        "end_date": "2026-04-01",
+        "stock_return": 0.0982440475848032,
+        "benchmark_return": -0.05449925275166345,
+        "relative_return": 0.15274330033646666,
+        "performance_ratio": 1.1615475194292453
+      },
+      "120": {
+        "start_date": "2025-10-08",
+        "end_date": "2026-04-01",
+        "stock_return": -0.16434428730949024,
+        "benchmark_return": -0.04437067377745263,
+        "relative_return": -0.11997361353203762,
+        "performance_ratio": 0.874455910634017
+      }
+    },
+    "rolling_summary": {
+      "20": {
+        "count": 232,
+        "mean_relative_return": 0.15193089021443584,
+        "hit_rate": 0.6853448275862069
+      },
+      "60": {
+        "count": 192,
+        "mean_relative_return": 0.4752554784831242,
+        "hit_rate": 0.7552083333333334
+      },
+      "120": {
+        "count": 132,
+        "mean_relative_return": 1.303690059717961,
+        "hit_rate": 0.9393939393939394
+      }
+    }
+  },
+  "relative_strength_summary": "Relative strength: 20d rel 8.59%; 60d rel 15.27%; 120d rel -12.00%."
+}

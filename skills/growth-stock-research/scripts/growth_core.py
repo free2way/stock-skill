@@ -153,6 +153,8 @@ def render_ranking(reports: list[dict]) -> str:
             f"### {short_text(report.get('ticker'))}",
             f"- Analysis date: {short_text(report.get('analysis_date'))}",
             f"- Score summary: {short_text(report.get('score_summary'), 'No score attached', 120)}",
+            f"- Relative strength: {short_text(report.get('relative_strength_summary'), 'No relative-strength snapshot attached', 120)}",
+            f"- Event study: {short_text(report.get('event_study_summary'), 'No event-study snapshot attached', 120)}",
             f"- Backtest summary: {short_text(report.get('backtest_summary'), 'No backtest attached', 120)}",
             f"- Key risks: {short_text(report.get('key_risks'), 'n/a', 120)}",
             f"- Valuation context: {short_text(report.get('valuation_context'), 'n/a', 120)}",
@@ -179,13 +181,15 @@ def build_dashboard_rows(reports: list[dict]) -> list[dict[str, str]]:
             "growth_durability": short_text(report.get("growth_durability")),
             "key_risks": short_text(report.get("key_risks")),
             "valuation_context": short_text(report.get("valuation_context")),
+            "relative_strength_summary": short_text(report.get("relative_strength_summary"), "No relative-strength snapshot"),
+            "event_study_summary": short_text(report.get("event_study_summary"), "No event-study snapshot"),
             "backtest_summary": short_text(report.get("backtest_summary"), "No backtest attached"),
         })
     return rows
 
 
 def write_csv(path: str, rows: list[dict[str, str]]) -> None:
-    fields = ["rank", "ticker", "analysis_date", "score_summary", "ranking_score", "missing_metrics", "business_quality", "growth_durability", "key_risks", "valuation_context", "backtest_summary"]
+    fields = ["rank", "ticker", "analysis_date", "score_summary", "ranking_score", "missing_metrics", "business_quality", "growth_durability", "key_risks", "valuation_context", "relative_strength_summary", "event_study_summary", "backtest_summary"]
     with open(path, "w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields)
         writer.writeheader()
@@ -218,7 +222,7 @@ def write_html(path: str, rows: list[dict[str, str]]) -> None:
     <h1>Growth Stock Watchlist</h1>
     <p>Use this dashboard as a triage surface. Re-check live filings, prices, and catalysts before making any investment decision.</p>
     <table>
-      <thead><tr><th>Rank</th><th>Ticker</th><th>Date</th><th>Score</th><th>Rank Score</th><th>Missing</th><th>Business</th><th>Growth</th><th>Risks</th><th>Valuation</th><th>Backtest</th></tr></thead>
+      <thead><tr><th>Rank</th><th>Ticker</th><th>Date</th><th>Score</th><th>Rank Score</th><th>Missing</th><th>Business</th><th>Growth</th><th>Risks</th><th>Valuation</th><th>Relative</th><th>Events</th><th>Backtest</th></tr></thead>
       <tbody>
 """
     body = []
@@ -235,6 +239,8 @@ def write_html(path: str, rows: list[dict[str, str]]) -> None:
             f"<td>{html.escape(row['growth_durability'])}</td>"
             f"<td>{html.escape(row['key_risks'])}</td>"
             f"<td>{html.escape(row['valuation_context'])}</td>"
+            f"<td>{html.escape(row['relative_strength_summary'])}</td>"
+            f"<td>{html.escape(row['event_study_summary'])}</td>"
             f"<td>{html.escape(row['backtest_summary'])}</td>"
             "</tr>"
         )

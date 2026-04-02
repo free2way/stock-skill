@@ -6,19 +6,11 @@ from __future__ import annotations
 import argparse
 import json
 import re
-from dataclasses import dataclass
+
+from industry_scorecard import build_score_payload
 
 
 NUMBER = r"(-?\d+(?:\.\d+)?)"
-
-
-@dataclass
-class ScoreResult:
-    name: str
-    score: int
-    max_score: int
-    note: str
-
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Update a growth stock report from text.")
@@ -216,101 +208,6 @@ def extract_metrics(text: str) -> dict:
     return payload
 
 
-def clamp_score(value: float, low: int = 0, high: int = 5) -> int:
-    return max(low, min(high, round(value)))
-
-
-def score_revenue_growth(value: float) -> ScoreResult:
-    return ScoreResult("revenue_growth", clamp_score((value - 5.0) / 10.0), 5, f"Revenue growth {value:.1f}%")
-
-
-def score_gross_margin(value: float) -> ScoreResult:
-    return ScoreResult("gross_margin", clamp_score((value - 30.0) / 8.0), 5, f"Gross margin {value:.1f}%")
-
-
-def score_fcf_margin(value: float) -> ScoreResult:
-    return ScoreResult("fcf_margin", clamp_score((value + 10.0) / 6.0), 5, f"FCF margin {value:.1f}%")
-
-
-def score_net_cash(value: float) -> ScoreResult:
-    return ScoreResult("net_cash_to_revenue", clamp_score(value / 0.4), 5, f"Net cash / revenue {value:.2f}x")
-
-
-def score_dilution(value: float) -> ScoreResult:
-    return ScoreResult("share_dilution", clamp_score((8.0 - value) / 1.6), 5, f"Share dilution {value:.1f}%")
-
-
-def score_customer_concentration(value: float) -> ScoreResult:
-    return ScoreResult("top_customer_share", clamp_score((60.0 - value) / 12.0), 5, f"Top customer share {value:.1f}%")
-
-
-def score_capital_intensity(value: float) -> ScoreResult:
-    return ScoreResult("capex_to_revenue", clamp_score((1.2 - value) / 0.24), 5, f"Capex / revenue {value:.2f}x")
-
-
-def score_rule_of_40(value: float) -> ScoreResult:
-    return ScoreResult("rule_of_40", clamp_score((value - 10.0) / 10.0), 5, f"Rule of 40 {value:.1f}")
-
-
-def build_scorecard(metrics: dict) -> list[ScoreResult]:
-    required = [
-        "revenue_growth_yoy",
-        "gross_margin",
-        "fcf_margin",
-        "net_cash_to_revenue",
-        "share_dilution_yoy",
-        "top_customer_share",
-        "capex_to_revenue",
-        "rule_of_40",
-    ]
-    for key in required:
-        if key not in metrics:
-            raise ValueError(f"Missing required metric for scoring: {key}")
-    return [
-        score_revenue_growth(float(metrics["revenue_growth_yoy"])),
-        score_gross_margin(float(metrics["gross_margin"])),
-        score_fcf_margin(float(metrics["fcf_margin"])),
-        score_net_cash(float(metrics["net_cash_to_revenue"])),
-        score_dilution(float(metrics["share_dilution_yoy"])),
-        score_customer_concentration(float(metrics["top_customer_share"])),
-        score_capital_intensity(float(metrics["capex_to_revenue"])),
-        score_rule_of_40(float(metrics["rule_of_40"])),
-    ]
-
-
-def overall_label(total_score: int, max_score: int) -> str:
-    ratio = total_score / max_score
-    if ratio >= 0.8:
-        return "excellent"
-    if ratio >= 0.65:
-        return "strong"
-    if ratio >= 0.5:
-        return "mixed"
-    return "weak"
-
-
-def render_score_json(ticker: str, scorecard: list[ScoreResult]) -> dict:
-    total_score = sum(item.score for item in scorecard)
-    max_score = sum(item.max_score for item in scorecard)
-    label = overall_label(total_score, max_score)
-    return {
-        "ticker": ticker,
-        "total_score": total_score,
-        "max_score": max_score,
-        "label": label,
-        "score_summary": f"Overall {total_score}/{max_score} ({label}).",
-        "breakdown": [
-            {
-                "name": item.name,
-                "score": item.score,
-                "max_score": item.max_score,
-                "note": item.note,
-            }
-            for item in scorecard
-        ],
-    }
-
-
 def summarize_backtest(backtest: dict) -> str | None:
     stats = backtest.get("stats")
     if not isinstance(stats, dict):
@@ -364,7 +261,7 @@ def update_report(report: dict, fresh_text: str, analysis_date: str) -> dict:
 
     score_payload = None
     if not metrics.get("missing"):
-        score_payload = render_score_json(str(report.get("ticker", "UNKNOWN")), build_scorecard(metrics))
+        score_payload = build_score_payload(metrics, ticker=str(report.get("ticker", "UNKNOWN")))
 
     updated = dict(report)
     updated["analysis_date"] = analysis_date

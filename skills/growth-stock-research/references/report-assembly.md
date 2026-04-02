@@ -12,6 +12,8 @@ The assembly script can combine:
 
 - `metrics.json`
 - `score.json`
+- `valuation.json`
+- `evidence.json`
 - `backtest.json`
 - `notes.json`
 
@@ -36,6 +38,7 @@ Recommended fields:
 ## Assembly Principles
 
 - Preserve machine-readable metrics and score details.
+- Preserve valuation and evidence-quality artifacts when available.
 - Add concise narrative summaries.
 - Derive `backtest_summary` from the backtest file when available.
 - Carry forward missing fields as explicit placeholders rather than inventing certainty.

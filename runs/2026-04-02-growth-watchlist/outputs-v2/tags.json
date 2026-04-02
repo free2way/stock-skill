@@ -1,0 +1,59 @@
+{
+  "items": [
+    {
+      "ticker": "NBIS",
+      "analysis_date": "2026-04-02",
+      "score": "22/40",
+      "label": "mixed",
+      "missing_metrics": 0,
+      "tags": [
+        "watch-only",
+        "has-backtest"
+      ]
+    },
+    {
+      "ticker": "IREN",
+      "analysis_date": "2026-04-02",
+      "score": "23/40",
+      "label": "mixed",
+      "missing_metrics": 0,
+      "tags": [
+        "watch-only",
+        "has-backtest"
+      ]
+    },
+    {
+      "ticker": "CRWV",
+      "analysis_date": "2026-04-02",
+      "score": "25/40",
+      "label": "mixed",
+      "missing_metrics": 0,
+      "tags": [
+        "watch-only",
+        "has-backtest"
+      ]
+    },
+    {
+      "ticker": "ASTS",
+      "analysis_date": "2026-04-02",
+      "score": "22/40",
+      "label": "mixed",
+      "missing_metrics": 0,
+      "tags": [
+        "watch-only",
+        "has-backtest"
+      ]
+    },
+    {
+      "ticker": "AAOI",
+      "analysis_date": "2026-04-02",
+      "score": "20/40",
+      "label": "mixed",
+      "missing_metrics": 0,
+      "tags": [
+        "watch-only",
+        "has-backtest"
+      ]
+    }
+  ]
+}

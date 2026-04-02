@@ -144,12 +144,14 @@ def build_payload(ticker: str, analysis_date: str, text: str) -> dict:
         "analysis_date": analysis_date,
     }
     sources: dict[str, str] = {}
+    evidence: dict[str, dict[str, object]] = {}
     missing: list[str] = []
 
     revenue_growth, source = extract_revenue_growth(text)
     if revenue_growth is not None:
         payload["revenue_growth_yoy"] = revenue_growth
         sources["revenue_growth_yoy"] = source or ""
+        evidence["revenue_growth_yoy"] = {"source_type": "unknown", "is_machine_extracted": True, "citation": source or ""}
     else:
         missing.append("revenue_growth_yoy")
 
@@ -157,6 +159,7 @@ def build_payload(ticker: str, analysis_date: str, text: str) -> dict:
     if gross_margin is not None:
         payload["gross_margin"] = gross_margin
         sources["gross_margin"] = source or ""
+        evidence["gross_margin"] = {"source_type": "unknown", "is_machine_extracted": True, "citation": source or ""}
     else:
         missing.append("gross_margin")
 
@@ -164,6 +167,7 @@ def build_payload(ticker: str, analysis_date: str, text: str) -> dict:
     if fcf_margin is not None:
         payload["fcf_margin"] = fcf_margin
         sources["fcf_margin"] = source or ""
+        evidence["fcf_margin"] = {"source_type": "unknown", "is_machine_extracted": True, "citation": source or ""}
     else:
         missing.append("fcf_margin")
 
@@ -171,6 +175,7 @@ def build_payload(ticker: str, analysis_date: str, text: str) -> dict:
     if top_customer_share is not None:
         payload["top_customer_share"] = top_customer_share
         sources["top_customer_share"] = source or ""
+        evidence["top_customer_share"] = {"source_type": "unknown", "is_machine_extracted": True, "citation": source or ""}
     else:
         missing.append("top_customer_share")
 
@@ -178,6 +183,7 @@ def build_payload(ticker: str, analysis_date: str, text: str) -> dict:
     if share_dilution is not None:
         payload["share_dilution_yoy"] = share_dilution
         sources["share_dilution_yoy"] = source or ""
+        evidence["share_dilution_yoy"] = {"source_type": "unknown", "is_machine_extracted": True, "citation": source or ""}
     else:
         missing.append("share_dilution_yoy")
 
@@ -185,6 +191,7 @@ def build_payload(ticker: str, analysis_date: str, text: str) -> dict:
     if rule_of_40 is not None:
         payload["rule_of_40"] = rule_of_40
         sources["rule_of_40"] = source or ""
+        evidence["rule_of_40"] = {"source_type": "unknown", "is_machine_extracted": True, "citation": source or ""}
 
     revenue_amount, source = extract_revenue_amount(text)
     if revenue_amount is not None:
@@ -200,11 +207,13 @@ def build_payload(ticker: str, analysis_date: str, text: str) -> dict:
 
     if revenue_amount and capex_amount:
         payload["capex_to_revenue"] = capex_amount / revenue_amount
+        evidence["capex_to_revenue"] = {"source_type": "unknown", "is_machine_extracted": True, "is_derived": True, "citation": f"{sources.get('capex_amount', '')} | {sources.get('revenue_amount', '')}"}
     else:
         missing.append("capex_to_revenue")
 
     if revenue_amount and net_cash_amount:
         payload["net_cash_to_revenue"] = net_cash_amount / revenue_amount
+        evidence["net_cash_to_revenue"] = {"source_type": "unknown", "is_machine_extracted": True, "is_derived": True, "citation": f"{sources.get('net_cash_amount', '')} | {sources.get('revenue_amount', '')}"}
     else:
         missing.append("net_cash_to_revenue")
 
@@ -212,11 +221,13 @@ def build_payload(ticker: str, analysis_date: str, text: str) -> dict:
         if "revenue_growth_yoy" in payload and "fcf_margin" in payload:
             payload["rule_of_40"] = float(payload["revenue_growth_yoy"]) + float(payload["fcf_margin"])
             sources["rule_of_40"] = "Derived as revenue_growth_yoy + fcf_margin"
+            evidence["rule_of_40"] = {"source_type": "manual_estimate", "is_machine_extracted": True, "is_derived": True, "citation": sources["rule_of_40"]}
         else:
             missing.append("rule_of_40")
 
     payload["missing"] = missing
     payload["sources"] = sources
+    payload["evidence"] = evidence
     return payload
 
 

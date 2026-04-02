@@ -14,6 +14,8 @@ NARRATIVE_FIELDS = [
     "valuation_context",
     "notes",
     "score_summary",
+    "valuation_summary",
+    "evidence_summary",
     "backtest_summary",
 ]
 
@@ -115,6 +117,21 @@ def score_block(old_report: dict, new_report: dict) -> list[str]:
     return lines
 
 
+def evidence_block(old_report: dict, new_report: dict) -> list[str]:
+    old_evidence = old_report.get("evidence_quality", {}) if isinstance(old_report.get("evidence_quality"), dict) else {}
+    new_evidence = new_report.get("evidence_quality", {}) if isinstance(new_report.get("evidence_quality"), dict) else {}
+    lines: list[str] = []
+    old_score = old_evidence.get("overall_confidence_score")
+    new_score = new_evidence.get("overall_confidence_score")
+    if old_score is not None or new_score is not None:
+        lines.append(f"- Overall confidence: {format_number(old_score)} -> {format_number(new_score)}")
+    old_label = old_evidence.get("overall_confidence_label")
+    new_label = new_evidence.get("overall_confidence_label")
+    if old_label != new_label:
+        lines.append(f"- Evidence label: {format_number(old_label)} -> {format_number(new_label)}")
+    return lines
+
+
 def render_markdown(old_report: dict, new_report: dict) -> str:
     ticker = new_report.get("ticker") or old_report.get("ticker") or "UNKNOWN"
     old_date = old_report.get("analysis_date", "n/a")
@@ -132,6 +149,10 @@ def render_markdown(old_report: dict, new_report: dict) -> str:
     ]
     score_lines = score_block(old_report, new_report)
     lines.extend(score_lines or ["- No score change detected"])
+
+    lines.extend(["", "## Evidence Quality"])
+    evidence_lines = evidence_block(old_report, new_report)
+    lines.extend(evidence_lines or ["- No evidence-quality change detected"])
 
     lines.extend(["", "## Metric Changes"])
     metric_lines = metric_diff(old_metrics, new_metrics)

@@ -1,0 +1,48 @@
+{
+  "relative_strength_version": "v1-lookback-relative",
+  "latest_date": "2026-04-01",
+  "aligned_row_count": 252,
+  "snapshots": {
+    "20": {
+      "start_date": "2026-03-04",
+      "end_date": "2026-04-01",
+      "stock_return": 0.042646739834366176,
+      "benchmark_return": -0.043291039609342996,
+      "relative_return": 0.08593777944370917,
+      "performance_ratio": 1.0898264602942758
+    },
+    "60": {
+      "start_date": "2026-01-05",
+      "end_date": "2026-04-01",
+      "stock_return": 0.0982440475848032,
+      "benchmark_return": -0.05449925275166345,
+      "relative_return": 0.15274330033646666,
+      "performance_ratio": 1.1615475194292453
+    },
+    "120": {
+      "start_date": "2025-10-08",
+      "end_date": "2026-04-01",
+      "stock_return": -0.16434428730949024,
+      "benchmark_return": -0.04437067377745263,
+      "relative_return": -0.11997361353203762,
+      "performance_ratio": 0.874455910634017
+    }
+  },
+  "rolling_summary": {
+    "20": {
+      "count": 232,
+      "mean_relative_return": 0.15193089021443584,
+      "hit_rate": 0.6853448275862069
+    },
+    "60": {
+      "count": 192,
+      "mean_relative_return": 0.4752554784831242,
+      "hit_rate": 0.7552083333333334
+    },
+    "120": {
+      "count": 132,
+      "mean_relative_return": 1.303690059717961,
+      "hit_rate": 0.9393939393939394
+    }
+  }
+}

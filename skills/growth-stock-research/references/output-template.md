@@ -52,6 +52,16 @@ Conclude with:
 
 State what would upgrade or downgrade the rating.
 
+### 6. Valuation Snapshot
+
+When data is available, add:
+
+- current EV/Sales
+- current EV/Gross Profit
+- bull / base / bear multiple frame
+- what those scenarios imply for upside or downside
+- one sentence on whether expectations look stretched, balanced, or constructive
+
 ## Two-Stock Comparison Template
 
 Use a symmetrical table or mirrored bullets covering:
@@ -62,6 +72,7 @@ Use a symmetrical table or mirrored bullets covering:
 - balance-sheet flexibility
 - dilution risk
 - valuation support
+- implied upside / downside under base-case assumptions
 - catalyst timing
 
 Then finish with:

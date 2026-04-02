@@ -8,11 +8,12 @@ A repeatable growth-stock research loop:
 
 1. collect current text inputs
 2. extract or normalize metrics
-3. score the business and stock setup
-4. fetch price history
-5. run a baseline backtest
-6. assemble report JSON files
-7. rank, tag, and export the watchlist
+3. review and confirm evidence
+4. score the business and stock setup
+5. fetch price history
+6. run a baseline backtest
+7. assemble report JSON files
+8. rank, tag, and export the watchlist
 
 ## Fastest practice path
 
@@ -23,16 +24,18 @@ A repeatable growth-stock research loop:
    - ranking
    - CSV watchlist
    - HTML watchlist
-4. Read the sample reports and manifest to understand the input format.
+4. Generate an evidence template and manually confirm a few key fields.
+5. Read the sample reports and manifest to understand the input format.
 
 ## Real-world path
 
 1. Create one folder per review cycle in your workspace.
 2. Save a plain-text summary for each stock using the latest investor materials.
 3. Write a short `notes.json` for each stock.
-4. Fetch prices and run a consistent backtest rule.
-5. Assemble one `report.json` per stock.
-6. Run batch ranking, tags, snapshot, and dashboard exports.
+4. Generate and review evidence annotations for the key metrics.
+5. Fetch prices and run a consistent backtest rule.
+6. Assemble one `report.json` per stock.
+7. Run batch ranking, tags, snapshot, and dashboard exports.
 
 ## Important judgment calls
 
@@ -40,6 +43,7 @@ A repeatable growth-stock research loop:
 - Infrastructure and pre-profit companies often require normalized workflow inputs.
 - Treat normalized inputs as internal research scaffolding, not audited truth.
 - Keep a note of where you inferred, approximated, or proxied a metric.
+- Low evidence scores should lower conviction even when the thesis sounds good.
 
 ## Suggested cadence
 

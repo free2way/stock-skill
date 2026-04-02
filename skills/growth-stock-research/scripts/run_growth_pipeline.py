@@ -5,20 +5,11 @@ from __future__ import annotations
 
 import argparse
 import re
-from dataclasses import dataclass
 from growth_core import build_dashboard_rows, build_tags, load_json, ranking_score, render_ranking, render_snapshot, short_text, write_csv, write_html, write_json
+from industry_scorecard import build_score_payload
 
 
 NUMBER = r"(-?\d+(?:\.\d+)?)"
-
-
-@dataclass
-class ScoreResult:
-    name: str
-    score: int
-    max_score: int
-    note: str
-
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run the growth watchlist pipeline.")
@@ -175,35 +166,10 @@ def merge_metrics(existing: dict, updated: dict, analysis_date: str, ticker: str
     return merged
 
 
-def clamp_score(value: float, low: int = 0, high: int = 5) -> int:
-    return max(low, min(high, round(value)))
-
-
 def build_score_json(ticker: str, metrics: dict) -> dict | None:
     if metrics.get("missing"):
         return None
-    scorecard = [
-        ScoreResult("revenue_growth", clamp_score((float(metrics["revenue_growth_yoy"]) - 5.0) / 10.0), 5, f"Revenue growth {float(metrics['revenue_growth_yoy']):.1f}%"),
-        ScoreResult("gross_margin", clamp_score((float(metrics["gross_margin"]) - 30.0) / 8.0), 5, f"Gross margin {float(metrics['gross_margin']):.1f}%"),
-        ScoreResult("fcf_margin", clamp_score((float(metrics["fcf_margin"]) + 10.0) / 6.0), 5, f"FCF margin {float(metrics['fcf_margin']):.1f}%"),
-        ScoreResult("net_cash_to_revenue", clamp_score(float(metrics["net_cash_to_revenue"]) / 0.4), 5, f"Net cash / revenue {float(metrics['net_cash_to_revenue']):.2f}x"),
-        ScoreResult("share_dilution", clamp_score((8.0 - float(metrics["share_dilution_yoy"])) / 1.6), 5, f"Share dilution {float(metrics['share_dilution_yoy']):.1f}%"),
-        ScoreResult("top_customer_share", clamp_score((60.0 - float(metrics["top_customer_share"])) / 12.0), 5, f"Top customer share {float(metrics['top_customer_share']):.1f}%"),
-        ScoreResult("capex_to_revenue", clamp_score((1.2 - float(metrics["capex_to_revenue"])) / 0.24), 5, f"Capex / revenue {float(metrics['capex_to_revenue']):.2f}x"),
-        ScoreResult("rule_of_40", clamp_score((float(metrics["rule_of_40"]) - 10.0) / 10.0), 5, f"Rule of 40 {float(metrics['rule_of_40']):.1f}"),
-    ]
-    total = sum(item.score for item in scorecard)
-    maximum = sum(item.max_score for item in scorecard)
-    ratio = total / maximum
-    label = "excellent" if ratio >= 0.8 else "strong" if ratio >= 0.65 else "mixed" if ratio >= 0.5 else "weak"
-    return {
-        "ticker": ticker,
-        "total_score": total,
-        "max_score": maximum,
-        "label": label,
-        "score_summary": f"Overall {total}/{maximum} ({label}).",
-        "breakdown": [{"name": item.name, "score": item.score, "max_score": item.max_score, "note": item.note} for item in scorecard],
-    }
+    return build_score_payload(metrics, ticker=ticker)
 
 
 def summarize_backtest(backtest: dict) -> str | None:

@@ -13,7 +13,9 @@ Included files:
 Example learning flow:
 
 1. Copy the sample files into a scratch directory.
-2. Run `scripts/run_growth_pipeline.py` against the copied manifest and reports.
-3. Inspect the generated tags, snapshot, ranking, CSV, and HTML outputs.
+2. Generate an evidence annotation template from one sample report.
+3. Mark a few fields as manually confirmed.
+4. Run `scripts/run_growth_pipeline.py` against the copied manifest and reports.
+5. Inspect the generated tags, snapshot, ranking, CSV, and HTML outputs.
 
 The sample files are intentionally small and synthetic. They are for workflow learning, not investment conclusions.

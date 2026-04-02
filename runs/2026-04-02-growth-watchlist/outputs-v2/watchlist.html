@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Growth Stock Watchlist</title>
+  <style>
+    :root { --bg:#f5f1e8; --card:#fffaf2; --ink:#1f2937; --muted:#6b7280; --line:#d6c7ae; --accent:#0f766e; --accent-soft:#d1fae5; }
+    body { margin:0; font-family:Georgia, "Times New Roman", serif; color:var(--ink); background:radial-gradient(circle at top left, #fff7ed, var(--bg)); }
+    main { max-width:1200px; margin:0 auto; padding:32px 20px 48px; }
+    h1 { margin:0 0 8px; font-size:2rem; }
+    p { color:var(--muted); max-width:760px; }
+    table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); box-shadow:0 12px 30px rgba(31, 41, 55, 0.08); }
+    th,td { padding:12px 10px; border-bottom:1px solid var(--line); vertical-align:top; text-align:left; font-size:0.95rem; }
+    th { background:#f7efe2; position:sticky; top:0; }
+    .rank { font-weight:bold; color:var(--accent); }
+    .score { display:inline-block; padding:4px 8px; border-radius:999px; background:var(--accent-soft); color:var(--accent); font-weight:600; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Growth Stock Watchlist</h1>
+    <p>Use this dashboard as a triage surface. Re-check live filings, prices, and catalysts before making any investment decision.</p>
+    <table>
+      <thead><tr><th>Rank</th><th>Ticker</th><th>Date</th><th>Score</th><th>Rank Score</th><th>Missing</th><th>Business</th><th>Growth</th><th>Risks</th><th>Valuation</th><th>Relative</th><th>Events</th><th>Backtest</th></tr></thead>
+      <tbody>
+        <tr><td class="rank">1</td><td>CRWV</td><td>2026-04-02</td><td><span class="score">Overall 25/40 (mixed).</span></td><td>0.62</td><td>0</td><td>Pure-play AI cloud platform with enormous backlog and rapid infrastructure scaling.</td><td>High if backlog converts cleanly and financing remains available at tolerable cost.</td><td>Leverage, interest burden, customer concentration, and any pause in AI infrastructure d...</td><td>One of the strongest operating stories in the group, but also one of the most financing...</td><td>Relative strength: 20d rel 3.00%; 60d rel 7.51%; 120d rel -39.53%.</td><td>No event-study snapshot</td><td>Backtest 2025-04-01 to 2026-04-01: total return -54.58%, max drawdown -56.49%.</td></tr>
+        <tr><td class="rank">2</td><td>IREN</td><td>2026-04-02</td><td><span class="score">Overall 23/40 (mixed).</span></td><td>0.57</td><td>0</td><td>Hybrid AI cloud and bitcoin infrastructure platform with real power assets and accelera...</td><td>Moderate because the AI build-out is promising but the business still carries bitcoin-l...</td><td>Execution risk, customer concentration, financing complexity, and continued overlap wit...</td><td>More optionality than stability; attractive if AI conversion keeps working, but still a...</td><td>Relative strength: 20d rel -17.91%; 60d rel -23.88%; 120d rel -38.83%.</td><td>No event-study snapshot</td><td>Backtest 2025-04-01 to 2026-04-01: total return -12.66%, max drawdown -55.79%.</td></tr>
+        <tr><td class="rank">3</td><td>NBIS</td><td>2026-04-02</td><td><span class="score">Overall 22/40 (mixed).</span></td><td>0.55</td><td>0</td><td>AI infrastructure platform with strong ecosystem validation from NVIDIA, Meta, and Micr...</td><td>High if capacity ramps, customer concentration stays manageable, and hyperscale demand ...</td><td>Extreme capital intensity, customer concentration, and a valuation that already discoun...</td><td>High-quality AI infrastructure story, but the stock still needs to prove that scale can...</td><td>Relative strength: 20d rel 8.59%; 60d rel 15.27%; 120d rel -12.00%.</td><td>No event-study snapshot</td><td>Backtest 2025-04-01 to 2026-04-01: total return -8.34%, max drawdown -45.47%.</td></tr>
+        <tr><td class="rank">4</td><td>ASTS</td><td>2026-04-02</td><td><span class="score">Overall 22/40 (mixed).</span></td><td>0.55</td><td>0</td><td>Category-defining direct-to-device satellite platform with major strategic carrier rela...</td><td>Potentially very high if commercial service scales, but the company is still in an earl...</td><td>Commercialization timing, satellite deployment execution, ongoing financing needs, and ...</td><td>The opportunity is unusually large, but the stock trades on future network success more...</td><td>Relative strength: 20d rel -15.60%; 60d rel -2.17%; 120d rel 7.87%.</td><td>No event-study snapshot</td><td>Backtest 2025-04-01 to 2026-04-01: total return 47.51%, max drawdown -47.02%.</td></tr>
+        <tr><td class="rank">5</td><td>AAOI</td><td>2026-04-02</td><td><span class="score">Overall 20/40 (mixed).</span></td><td>0.50</td><td>0</td><td>Optical networking supplier leveraged to AI and datacenter demand, with improving produ...</td><td>Moderate to high if hyperscaler and datacenter demand keeps compounding into 800G and 1...</td><td>Customer concentration, cyclical optics demand, manufacturing execution, and margin sen...</td><td>More cyclical and component-driven than the others, but also easier to justify on neare...</td><td>Relative strength: 20d rel -9.07%; 60d rel 152.23%; 120d rel 172.44%.</td><td>No event-study snapshot</td><td>Backtest 2025-04-01 to 2026-04-01: total return 203.84%, max drawdown -47.64%.</td></tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>

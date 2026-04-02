@@ -26,7 +26,8 @@ It is weaker when:
 1. Run the extractor on the earnings summary, shareholder letter, or notes you prepared.
 2. Review the generated `sources` block and `missing` list.
 3. Manually patch anything that looks wrong or missing.
-4. Feed the result to `score_growth_stock.py`.
+4. Add `industry_profile` manually because the extractor does not infer business model.
+5. Feed the result to `score_growth_stock.py`.
 
 ## Expected JSON Fields
 
@@ -47,6 +48,10 @@ It also includes:
 
 - `missing`
 - `sources`
+
+You should usually add:
+
+- `industry_profile`
 
 ## Good Source Documents
 
