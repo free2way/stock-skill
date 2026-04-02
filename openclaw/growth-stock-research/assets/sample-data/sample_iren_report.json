@@ -1,0 +1,29 @@
+{
+  "ticker": "IREN",
+  "analysis_date": "2026-04-02",
+  "business_quality": "Hybrid AI cloud and bitcoin infrastructure model.",
+  "growth_durability": "Moderate with more execution and BTC-linked dependence.",
+  "key_risks": "Funding needs, BTC sensitivity, transition risk.",
+  "valuation_context": "Optionality with more narrative volatility.",
+  "metrics": {
+    "ticker": "IREN",
+    "analysis_date": "2026-04-02",
+    "revenue_growth_yoy": 41.0,
+    "gross_margin": 52.0,
+    "fcf_margin": -12.0,
+    "top_customer_share": 35.0,
+    "share_dilution_yoy": 5.0,
+    "capex_to_revenue": 0.92,
+    "net_cash_to_revenue": 0.45,
+    "rule_of_40": 29.0,
+    "missing": [],
+    "sources": {}
+  },
+  "score": {
+    "ticker": "IREN",
+    "total_score": 19,
+    "max_score": 40,
+    "label": "mixed",
+    "score_summary": "Overall 19/40 (mixed)."
+  }
+}

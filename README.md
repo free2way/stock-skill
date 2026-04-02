@@ -7,6 +7,9 @@ Growth stock research skill and example run artifacts.
 - `skills/growth-stock-research/`
   The Codex skill, including workflow instructions, references, scripts, shared helpers, and sample data.
 
+- `openclaw/growth-stock-research/`
+  An OpenClaw-compatible packaging of the same skill for direct installation into `~/.openclaw/skills/`.
+
 - `runs/2026-04-02-growth-watchlist/`
   A real workflow run for:
   - `NBIS`
@@ -28,3 +31,4 @@ Growth stock research skill and example run artifacts.
 
 - Some run inputs are normalized workflow values used to keep the scorecard comparable across very different business models.
 - Treat run outputs as research scaffolding, not audited investment recommendations.
+- OpenClaw install notes are in `openclaw/README.md`.

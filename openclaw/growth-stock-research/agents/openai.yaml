@@ -1,0 +1,7 @@
+interface:
+  display_name: "Growth Stock Research"
+  short_description: "Analyze growth stocks with backtests."
+  default_prompt: "Use $growth-stock-research to analyze a U.S. growth stock, compare bull and bear cases, and run a backtest if structured data is available."
+
+policy:
+  allow_implicit_invocation: true
